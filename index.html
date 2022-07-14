@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список заметок</title>
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+    <div class="app">
+        <form method="get" class="notesForm" action="">
+            <div class="formBlock">
+                <span class="label"><label for="headerInput">Заголовок</label></span>
+                <input type="text" class="noteInput" id="headerInput">
+                <div id="headerError" class="invisible">Минимум - 1 символ</div>
+            </div>
+            <div class="formBlock">
+                <span class="label"><label for="textInput">Текст</label></span>
+                <input type="text" class="noteInput" id="textInput">
+                <div id="textError" class="invisible">Минимум - 10 символов</div>
+            </div>
+            <button class="submitButton" id="noteSubmit">Добавить заметку</button>
+        </form>
+        <div class="notesContainer" id="notesContainer">
+            <!--div class="note noteFlex">
+                <div class="noteContents">
+                    <div class="noteHeader visible">
+                        Hello
+                    </div>
+                    <input type="text" class="invisible" value="">
+                    <div class="noteText visible">
+                        Hello from Russia with love and Calibres to Ukrainian Nazis!
+                    </div>
+                    <input type="text" class="invisible" value="">
+                    <img src="images/delete.png" class="noteDeleteButton">
+                </div>
+            </div -->
+        </div>
+    </div>
+    <script type="text/javascript" src="js/note.js"></script>
+    <script type="text/javascript" src="js/noteForm.js"></script>
+    <script type="text/javascript" src="js/noteManager.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
